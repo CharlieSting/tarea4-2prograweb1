@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>productos</title>
+</head>
+
+<body>
+    <div class="container m-5 p-5">
+        <div class="row">
+            <div class="col-4">
+                <form name="From_product" onsubmit="guardar(event)">
+
+                    <div class="container m-5">
+                        <h2>Ingrese productos</h2>
+                        <!--Producto-->
+                        <div class="mb-3">
+                            <label class="form-label">Codigo de producto</label>
+                            <input type="text" class="form-control" name="productocode" required>
+                        </div>
+                        <!--Nombre Producto-->
+
+                        <div class="mb-3">
+                            <label class="form-label">Nombre producto</label>
+                            <input type="text" class="form-control" name="nombreP" required>
+                        </div>
+
+                        <!--Precio Producto-->
+
+                        <div class="mb-3">
+                            <label class="form-label">Precio</label>
+                            <input type="number" class="form-control" name="precio" required>
+                        </div>
+
+                        <!--Foto Producto-->
+
+                        <div class="mb-3">
+                            <label class="form-label">Foto</label>
+                            <input type="text" class="form-control" name="foto" required>
+                        </div>
+
+                        <!--Descripcion Producto-->
+
+                        <div class="mb-3">
+                            <label class="form-label">Descripcion</label>
+                            <input type="text" class="form-control" name="descripcion" required>
+                        </div>
+
+                        <button class="btn btn-primary" type="submit">Guardar</button>
+                        <button class="btn btn-danger" type="reset" >Reset</button>
+                    </div>
+                </form>
+    
+            </div>
+
+        </div>
+ <!--Tablas de Producto-->
+        <div class="col-8">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">SKU</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Precio</th>
+                        <th scope="col">Foto</th>
+                        <th scope="col">Descripcion</th>
+                    </tr>
+                </thead>
+                <tbody id="cuerpo_tabla">
+                  <img src="" alt="">
+            </table>
+        </div>
+    </div>
+
+ 
+</body>
+<script src="logic2.js"></script>
+</html>
+
+<img src="" alt="" style="height: 12px ;width: 12px">
